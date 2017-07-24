@@ -50,6 +50,7 @@ public class Image {
     public String deleteImg(HttpServletRequest request, HttpServletResponse response) {
         String id = request.getParameter("pixivId");
         System.out.println(id);
+        System.out.println(id);
         PixivImage pixivImage=new PixivImage();
         pixivImage.setPixivId(Long.valueOf(id));
         pixivImage.setIsdeleted(true);
